@@ -4,13 +4,13 @@
 
 >Category1 <- c(“Name1”, “Name2”)
 
-_#Category1 = Functional groups
+*#Category1 = Functional groups*
 
-#Name1 = Name of each functional group_
+*#Name1 = Name of each functional group*
 
 >Category2 <- c(1,2)
 
-_#Category2 = Count of proteins in each functional group_
+*#Category2 = Count of proteins in each functional group*
 
 >DataName <- data.frame(Category1, Category2)
 
@@ -19,24 +19,24 @@ _#Category2 = Count of proteins in each functional group_
 
 >png("Filename.png", width = 800, height = 800)
 
-_#Width and height values are in pixels_
+*#Width and height values are in pixels*
 
 >pie(DataName$Category2, labels = NULL, cex = #, main = “Title”, col = mycolors)
 
-_#cex changes the label font size
+*#cex changes the label font size*
 
-#base pie command keeps order of Category1
+*#base pie command keeps order of Category1*
 
-#Removes label names, replaces them with numbers that can be removed in Illustrator_
+*#Removes label names, replaces them with numbers that can be removed in Illustrator*
 
 >legend(“right”, legend = Category1, fill = mycolors, cex = #)
 
-_#Add legend. Can use bottomright, bottom, bottomleft, left, or combos with top.
+*#Add legend. Can use bottomright, bottom, bottomleft, left, or combos with top.*
 
-#Legend overwrites part of pie chart. Generate pie chart w/ and w/o legend and crop if needed._
+*#Legend overwrites part of pie chart. Generate pie chart w/ and w/o legend and crop if needed.*
 
 >dev.off()
 
-_#Clears previous figure.
+*#Clears previous figure.*
 
-#Files save to working directory._
+*#Files save to working directory.*
